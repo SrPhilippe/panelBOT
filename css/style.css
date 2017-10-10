@@ -1,0 +1,113 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700');
+
+* { margin: 0; padding: 0; }
+
+a { color: #0FA28F; text-decoration: none; }
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: Open Sans, arial, sans-serif;
+	background: #1e2225;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    background: #282c35;
+}
+::-webkit-scrollbar-thumb {
+    background: #282c35;
+    border-radius: 25px;
+    box-shadow: inset 0 0 2px #0FA28F;
+}
+
+/*---------------------------------------------------------------------------------------\
+|             Principal
+\---------------------------------------------------------------------------------------*/
+
+.page { display: none; }
+
+#main {
+	width: 100%;
+	color: #fff;
+	overflow-y: scroll;
+}
+
+
+/*---------------------------------------------------------------------------------------\
+|             Páginas
+\---------------------------------------------------------------------------------------*/
+
+#main .page {
+
+}
+
+#main .page .header {
+	padding: 20px 5px 20px 30px;
+	background: #0FA28F;
+	text-shadow: 0 3px 2px rgba(0,0,0,.3);
+	box-shadow: inset 0 -2px 1px 3px rgba(255,255,255,.3);
+	display: flex;
+}
+
+#main .page .header h2 {
+	color: #fff;
+	background: rgba(0,0,0,.5);
+	padding: 10px 20px;
+	border-radius: 3px;
+}
+
+/*---------------------------------------------------------------------------------------\
+|             Menu Lateral
+\---------------------------------------------------------------------------------------*/
+
+#menu-left {
+	width: 220px;
+	height: 100vh;
+	background: linear-gradient(to bottom, #343b42, #2c3a46);
+}
+
+#menu-left ul {
+	list-style: none;
+}
+
+#menu-left ul li.action {
+	color: #fff;
+	display: block;
+	font-size: 15px;
+	padding: 15px 5px 15px 20px;
+	box-shadow: 0 1.3px 0 #1e2225, inset 0 -1px rgba(99, 122, 144, 0.3);
+	transition: all .3s linear;
+}
+
+#menu-left ul li i {
+	margin-right: 5px;
+}
+
+#menu-left ul li.action:hover {
+	background: rgba(15, 162, 143, .3);
+	color: #0FA28F;
+	cursor: pointer;
+	box-shadow: inset -2px 0 0 #0FA28F, inset 2px 0 0 #0FA28F;
+}
+
+#menu-left li.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,.3);
+	padding: 10px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	cursor: default;
+}
+
+
+
