@@ -21,6 +21,10 @@ body {
 	display: flex;
 }
 
+button:focus {
+	outline: none;
+}
+
 ::-webkit-scrollbar {
     width: 13px;
     background: #282c35;
@@ -80,36 +84,70 @@ body {
 
 
 .list table {
+	width: 100%;
 	padding: 3px;
 	border-radius: 3px;
 	border: 1px solid #0FA28F;
 }
 
-.list table tr:nth-child(2n+1) {
-	background: rgba(46, 51, 60, 0.75);
-}
-
-.list table tr:nth-child(2n+2) {
-	background: #3d4652;
-}
-
-.list table tr:nth-child(2n+2) th {
-	color: #fff;
-}
-
-.list table tr th {
+.list table thead th {
 	text-align: left;
 	color: #0FA28F;
 	font-size: 13px;
+	background: #2b4146;
 }
 
 .list table tr td {
 	font-size: 13px;
+}
+
+.list table tr:nth-child(even) {
+	background: #24292f;
+}
+.list table tr:nth-child(odd) {
+	background: #1d2227;
 }
 
 .list table tr th,
 .list table tr td {
-	padding: 5px 20px 10px 5px;
+	padding: 5px 20px 5px 5px;
+}
+.list td.buttons button:nth-child(1) { margin-left: 10px; }
+
+.list td.buttons button:nth-child(1),
+.list td.buttons button:nth-child(2) {
+	margin-right: 10px;
+}
+
+.list td.buttons button {
+	padding: 5px 10px;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	border-radius: 3px;
+	-webkit-transition: all .1s linear;
+			transition: all .1s linear
+}
+
+.list td.buttons .start {
+	background: #0fa28f;
+	color: #98efdc;
+}
+
+.list td.buttons .stop {
+	background: #b92929;
+	color: #ef9898;
+}
+
+.list td.buttons .restart {
+	background: #2b7ec7;
+	color: #98caef;
+}
+
+.list td.buttons button:hover {
+	background: transparent;
+	box-shadow: inset 0 0 1.5px #0fa28f;
+	color: #0fa28f;
 }
 
 /*---------------------------------------------------------------------------------------\
