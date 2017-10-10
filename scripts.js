@@ -1,11 +1,11 @@
 
 $(document).ready(function() {
 
-	currentPage = 'bots';
+	currentPage = 'bot1';
 	atualPage();
 
 	// Mostra a página inicial
-	$('.page.bots').fadeIn(1000);
+	$('.page.bot1').fadeIn(1000);
 
 	// Ao clicar no elemento com classe 'action', executa a função (menuSelect)
 	$('.action').click(menuSelect);
@@ -23,18 +23,12 @@ function menuSelect() {
 		atualPage();
 	}
 
-	else if ($(this).hasClass('bots')) {
+	else if ($(this).hasClass('bot1')) {
 
 		$('.page').slideUp();
-		$('.page.bots').slideDown();
-		currentPage = 'bots';
+		$('.page.bot1').slideDown();
+		currentPage = 'bot1';
 		atualPage();
-	}
-
-	else if ($(this).hasClass('execution-details')) {
-
-		$('.page').slideUp();
-		$('.page.execution-details').slideDown();
 	}
 
 	else { alert("Este item não possuí uma classe para o redirecionamento atribuída"); }
