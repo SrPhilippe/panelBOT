@@ -1,11 +1,11 @@
 
 $(document).ready(function() {
 
-	currentPage = 'home';
+	currentPage = 'bots';
 	atualPage();
 
 	// Mostra a página inicial
-	$('.page.home').fadeIn(1000);
+	$('.page.bots').fadeIn(1000);
 
 	// Ao clicar no elemento com classe 'action', executa a função (menuSelect)
 	$('.action').click(menuSelect);
