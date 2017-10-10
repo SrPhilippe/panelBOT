@@ -1,1 +1,1 @@
-# Demo https://srphilippe.github.io/panelBOT/
+Demo https://srphilippe.github.io/panelBOT/
