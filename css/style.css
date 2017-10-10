@@ -9,9 +9,7 @@ ul, ol {
 	list-style: none;
 }
 
-img {
-	max-width: 100%;
-}
+img { max-width: 100%; }
 
 body {
 	font-family: Open Sans, arial, sans-serif;
@@ -81,7 +79,7 @@ button:focus {
 	padding: 30px 20px;
 }
 
-
+/* Tabela */
 
 .list table {
 	width: 100%;
@@ -112,6 +110,8 @@ button:focus {
 .list table tr td {
 	padding: 5px 20px 5px 5px;
 }
+
+/* Botões Ações Tabela */
 .list td.buttons button:nth-child(1) { margin-left: 10px; }
 
 .list td.buttons button:nth-child(1),
