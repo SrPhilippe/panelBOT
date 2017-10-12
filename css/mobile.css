@@ -1,0 +1,43 @@
+
+
+@media screen and (max-width: 768px)
+
+{
+	#main .page .list {
+		padding: 0px !important;
+	}
+
+	#main .page .header {
+		padding: 20px 10px !important;
+		justify-content: center;
+	}
+
+	#main .page .header h2 {
+		margin-bottom: 5px;
+	}
+
+	.list td.buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		padding: 0 !important;
+	}
+
+	.list td.buttons button {
+		margin: 5px 0;
+		padding: 10px 0px !important;
+		font-size: 12px;
+	}
+
+	.list td.buttons button:nth-child(1),
+	.list td.buttons button:nth-child(2),
+	.list td.buttons button:nth-child(3) {
+		margin-right: 0 !important;
+	}
+
+	.list table tr th,
+	.list table tr td {
+		padding: 5px 10px;
+	}
+
+}
