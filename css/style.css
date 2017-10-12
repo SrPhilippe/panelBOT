@@ -66,6 +66,50 @@ button:focus {
 	        box-shadow: inset 2px 0 0 #0FA28F !important;
 }
 
+#menu-left.mobile {
+	position: fixed;
+	z-index: 998;
+	left: -220px;
+	top: 55px;
+	transition: left .5s ease-in;
+}
+
+#menu-left.mobile.active {
+	left: 0px;
+}
+
+#mobile-menu {
+	top: 10px;
+	left: 10px;
+	z-index: 999;
+	display: none;
+	position: fixed;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all .5s ease-in;
+	background: rgba(0,0,0,.5);
+}
+
+#mobile-menu.active {
+	top: 0;
+	left: 0;
+	width: 220px;
+	border-radius: 0;
+	background: #222;
+}
+
+#mobile-menu.active > div {
+	background: #0FA28F;
+}
+
+#mobile-menu > div {
+	width: 50px;
+	height: 5px;
+	background: #fff;
+	margin: 10px;
+	border-radius: 5px;
+}
+
 #menu-left {
 	width: 220px;
 	height: 100vh;
