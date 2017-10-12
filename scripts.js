@@ -18,4 +18,15 @@ $(document).ready(function() {
 
 	$('.page.bot').load('content.html');
 
+
+	// Mostrar modal
+	$(document).on('click', '.buttons .edit', function() {
+		$('.modal').addClass('active');
+	})
+	
+	// Ocultar modal
+	$(document).on('click', '.modal', function() {
+		$('.modal').removeClass('active');
+	});
+
 });
