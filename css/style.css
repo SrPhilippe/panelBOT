@@ -11,6 +11,10 @@ ul, ol {
 
 img { max-width: 100%; }
 
+textarea:focus {
+	outline: none;
+}
+
 body {
 	font-family: Open Sans, arial, sans-serif;
 	background: #1e2225;
@@ -21,6 +25,11 @@ body {
 
 button:focus {
 	outline: none;
+}
+
+::selection {
+	background: #16ceb6;
+	color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -91,7 +100,7 @@ button:focus {
 .list table thead th {
 	text-align: left;
 	color: #0FA28F;
-	font-size: 13px;
+	font-size: 14px;
 	background: #2b4146;
 }
 
@@ -115,7 +124,8 @@ button:focus {
 .list td.buttons button:nth-child(1) { margin-left: 10px; }
 
 .list td.buttons button:nth-child(1),
-.list td.buttons button:nth-child(2) {
+.list td.buttons button:nth-child(2),
+.list td.buttons button:nth-child(3) {
 	margin-right: 10px;
 }
 
@@ -131,17 +141,15 @@ button:focus {
 
 .list td.buttons .start {
 	background: #0fa28f;
-	color: #98efdc;
 }
 
 .list td.buttons .stop {
 	background: #b92929;
-	color: #ef9898;
 }
 
-.list td.buttons .restart {
+.list td.buttons .restart,
+.list td.buttons .edit {
 	background: #2b7ec7;
-	color: #98caef;
 }
 
 .list td.buttons button:hover {
@@ -152,6 +160,25 @@ button:focus {
 
 button:active {
 	transform: scale(.9) !important;
+}
+
+
+/* Console LOG */
+
+
+.page .console {
+	background: #191c1f;
+	padding: 20px;
+}
+
+.page .console textarea {
+	background: transparent;
+	color: #67717b;
+	width: 100%;
+	resize: none;
+	border: none;
+	font-size: 13px;
+	line-height: 1.5;
 }
 
 /*---------------------------------------------------------------------------------------\
