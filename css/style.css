@@ -22,6 +22,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	overflow: hidden;
 }
 
 button:focus {
@@ -47,7 +48,7 @@ button:focus {
 |             Principal
 \---------------------------------------------------------------------------------------*/
 
-.page { display: none; }
+.page { display: none; position: relative; }
 
 #main {
 	width: 100%;
@@ -215,6 +216,62 @@ button:focus {
 .list table tr th,
 .list table tr td {
 	padding: 15px 20px;
+}
+
+/* Tabela Comandos ajustes */
+#main .page.commands .list {
+	padding: 0;
+}
+
+table.commands {
+	border: none;
+  	border-radius: 0;
+  	padding: 0;
+  	margin: 0;
+  	background: #0FA28F;
+  	border-collapse: collapse;
+}
+
+table.commands tr td,
+table.commands thead th {
+	text-align: center;
+	border: 1px solid #0a7164;
+  	width: 100px;
+}
+
+table.commands td {
+  font-size: 15px !important;
+}
+
+table.commands tr td:nth-child(2) {
+	font-weight: bold;
+}
+
+td .tooltip {
+	display: block;
+	opacity: 0;
+	margin-top: 10px;
+	border-radius: 3px;
+	padding: 5px 10px;
+	position: absolute;
+	background: #0a7164;
+	cursor: help;
+	transition: .5s ease-out;
+}
+
+td .tooltip:before {
+	content: "";
+	width: 0;
+	height: 0;
+	margin-left: 5px;
+	border: 8px solid transparent;
+	border-bottom-color: #0a7164;
+	position: absolute;
+	top: -16px;
+}
+
+tr:hover .tooltip {
+	opacity: 1;
 }
 
 /* Botões Ações Tabela */

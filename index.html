@@ -9,9 +9,13 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="imagens/favicon.ico">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="scripts.js"></script>
-	<script src="menu-mobile.js"></script>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/typeEffect.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/tableFunctions.js"></script>
+	<script src="js/menu-mobile.js"></script>
 
 </head>
 <body>
@@ -22,7 +26,8 @@
 			<img src="imagens/robot.png" alt="robot">
 			<span>BOT Painel</span>
 		</li>
-		<li class="action home"><i class="fa fa-home"></i>Home</li>
+		<li class="action page home"><i class="fa fa-home"></i>Home</li>
+		<li class="action page commands"><i class="fa fa-book"></i>Comandos</li>
 		<li class="action bot bot1"><i class="fa fa-heartbeat"></i>Bot 1</li>
 		<li class="action bot bot2"><i class="fa fa-heartbeat"></i>Bot 2</li>
 		<li class="action bot bot3"><i class="fa fa-heartbeat"></i>Bot 3</li>
@@ -35,15 +40,30 @@
 </div>
 
 <div id="main">
-	<div class="page page0 home">
+	<div class="page normal page0 home">
 		<div class="header">
 			<h2>Página Inicial</h2>
 		</div>
 	</div> <!-- home-page -->
 
+	<div class="page normal page1 commands">
+		<div class="option">
+			<div class="header">
+				<h2>Comandos do BOT</h2>
+				<p>descrição breve</p>
+			</div>
+
+			<ul class="list">
+				
+			</ul>
+		</div>
+	</div> <!-- commands page -->
+
 </div> <!-- main -->
 
 
+<script>
+</script>
 	
 </body>
 </html>
