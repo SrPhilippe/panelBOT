@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$('.page0').fadeIn(1000);
 
 	// Carrega documento dos comandos
-	$('.page.normal.commands ul.list').load('commands.html');
+	$('.page.commands ul.list').load('commands.html');
 
 	$('.action.page').each(function(index, el) {
 		$(el).click(function() {

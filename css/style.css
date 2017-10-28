@@ -72,7 +72,7 @@ button:focus {
 	z-index: 998;
 	left: -220px;
 	top: 55px;
-	transition: left .5s ease-in;
+	transition: left .3s linear;
 }
 
 #menu-left.mobile.active {
@@ -87,7 +87,7 @@ button:focus {
 	position: fixed;
 	cursor: pointer;
 	border-radius: 5px;
-	transition: all .5s ease-in;
+	transition: all .3s linear;
 	background: rgba(0,0,0,.5);
 }
 
